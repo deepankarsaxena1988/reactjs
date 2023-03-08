@@ -1,0 +1,44 @@
+.card {
+width:200px;
+height: 300px;
+border:1px solid hsl(0, 0%, 5%);
+background-color:white;
+text-overflow: ellipsis;
+overflow: hidden;
+box-shadow:  4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+float: left;
+margin-right: 20px;
+margin-bottom: 40px;
+transition: 0.3s;
+border-radius: 10px;
+}
+
+.card:hover{
+    box-shadow:  8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+}
+.cardImage{
+ margin: 0px;  
+height: 150px;
+border:0px solid hsl(0, 0%, 5%);
+
+text-overflow: ellipsis;
+overflow: hidden;
+}
+div.cardImage img {
+    width: 100%;
+    height: 100%;
+  }
+  
+.cardText{
+    font-family: serif;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+.cardText .cardTextDesc{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    text-align: center;
+    padding: 10px;
+}
