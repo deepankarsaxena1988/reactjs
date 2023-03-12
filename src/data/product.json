@@ -27,40 +27,12 @@
             }
     },
     {
-        "id": "product4",
-        "value": "Image4",
-        "imageURL": "image4.jpg",
+        "id": "produc7",
+        "value": "Image3",
+        "imageURL": "image3.jpg",
         "productText":{
-            "productHeading":"Image 4 heading",
-            "productDescription":"Image 4 description"
-            }
-    }
-    ,
-    {
-        "id": "product4",
-        "value": "Image4",
-        "imageURL": "image4.jpg",
-        "productText":{
-            "productHeading":"Image 4 heading",
-            "productDescription":"Image 4 description"
-            }
-    },
-    {
-        "id": "product4",
-        "value": "Image4",
-        "imageURL": "image4.jpg",
-        "productText":{
-            "productHeading":"Image 4 heading",
-            "productDescription":"Image 4 description"
-            }
-    },
-    {
-        "id": "product4",
-        "value": "Image4",
-        "imageURL": "image4.jpg",
-        "productText":{
-            "productHeading":"Image 4 heading",
-            "productDescription":"Image 4 description"
+            "productHeading":"Image 3 heading",
+            "productDescription":"Image 3 description"
             }
     }
   ]}

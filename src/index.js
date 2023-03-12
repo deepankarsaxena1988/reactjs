@@ -38,11 +38,45 @@ const [data1,setData1]=  useState(require("./data/product.json"));
 
 }
 
+function  ProductList(){
+  const [prods,setProds]=useState({products:[{}],size:0});
+  const fetchData = async () => {
+    try{
+      const response = await fetch("http://localhost:8080/productList");
+      const data =await response.json();
+      console.log(data);
+      console.log('fetch called');
+      setProds(prods.products=data.products,prods.size=data.products.length);
+      console.log(prods);
+      console.log(prods.size)
+      prods.products.map((pro)=>{console.log(pro.id);
+      })
+    }catch(error){
+      console.log(error);
+    }
+  };
+  useEffect(()=>{
+    fetchData();
+  },[]);
+  
+  return (
+     <>
+
+     <h1>{JSON.parse(JSON.stringify(prods)).length}</h1>
+     <h1>{Object.entries(JSON.parse(JSON.stringify(prods))).map(([key,value])=>console.log(value))}</h1>
+       {/*  {JSON.parse(JSON.stringify(prods)).map((prod)=><Card product={prod}/>)} */}
+         
+    
+    </> 
+     
+ );
+}
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
     
-    <HomePage/>
+    <ProductList/>
   </>
 );
 

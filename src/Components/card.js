@@ -10,7 +10,7 @@ function Card(props){
                 {/* <h1>test{props.product.id}</h1> */}
                 <CardImage imageURL={props.product.imageURL}/>
             
-                 <CardText product={props.product.productText}/>  
+                {/*  <CardText product={props.product.productText}/>   */} 
             </div>
         </>
     );
